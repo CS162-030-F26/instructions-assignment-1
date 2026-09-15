@@ -1,10 +1,10 @@
 # Instructions for Assignment 1: Git, GitHub, and “Hello, World!”
 
-(If you don’t have any experience with shells / SSH, then it’s strongly
+If you don’t have any experience with shells / SSH, then it’s strongly
 recommended that you wait until completing lab 1 before doing this
 assignment. But if you want to get a head start anyways, refer to the
 [lecture notes](https://guyera.github.io/cs162/lecture-notes/) on
-“Terminals, Shells, and SSH,” “Basic Bash Commands,” and “Vim.”)
+“Terminals, Shells, and SSH,” “Basic Bash Commands,” and “Vim.”
 
 ## Context
 In this assignment, you will learn how to securely access GitHub from remote
@@ -193,7 +193,9 @@ servers, then complete the following steps:
     associated with your GitHub account (again, keep the quotation
     marks). For example:
 
-        git config --global user.email "guyera@oregonstate.edu"
+    ```
+    git config --global user.email "guyera@oregonstate.edu"
+    ```
 
 ## Cloning an assignment repository
 
@@ -214,11 +216,11 @@ starter code for assignments and labs. Complete the following steps:
     instructions.
 
 > [!NOTE]
-> You have write access to this new repository. However,
-> it's nested
-> within our class’s GitHub Organization, meaning that the TAs and
-> instructor have access to it as well. Other students do not have
-> access to it.
+  You have write access to this new repository. However,
+  it's nested
+  within our class’s GitHub Organization, meaning that the TAs and
+  instructor have access to it as well. Other students do not have
+  access to it.
 
     On this page, you should see a green button that says “`<> Code`”. Click
     that button.
@@ -378,37 +380,75 @@ Complete the following steps:
 
 The final step is to submit your GitHub repository to Gradescope. 
 
-1. Access Gradescope from the Canvas assignment page. You should be able to do this by clicking the button that says "Load assignment in a new window". If you don't see that button, click "Gradescope" on the Canvas side bar.
+1. Access Gradescope from the Canvas assignment page. You should be able
+   to do this by clicking the button that says "Load assignment in a
+   new window". If you don't see that button, click "Gradescope"
+   on the Canvas side bar.
 
 2. Click on Assignment 1 in Gradescope if you aren't already there.
 
 3. Click on the "Upload Submission" button.
 
-4. Since this is the first GitHub repository you've ever uploaded to this course's Gradescope site, you'll need to give Gradescope permissions to access your GitHub repositories. You should see a "Connect to GitHub" button. Click the button.
+4. Since this is the first GitHub repository you've ever uploaded
+   to this course's Gradescope site, you'll need to give Gradescope
+   permissions to access your GitHub repositories. You should see a
+   "Connect to GitHub" button. Click the button.
 
-    ![Submit Assignment dialog](res/submit-assignment.png)
+   ![Submit Assignment dialog](res/submit-assignment.png)
 
-5. You will be taken to an Authorization page, which asks for permission to access your account. If you are part of multiple organizations, it will show them all. In general it is wise to restrict permissions as much as you can; you only need to give it permissions for our class's organization. Here's a screenshot from a past term:
+5. You will be taken to an Authorization page, which asks for permission
+   to access your account. If you are part of multiple organizations,
+   it will show them all. In general it is wise to restrict permissions
+   as much as you can; you only need to give it permissions for our class's
+   organization. Here's a screenshot from a past term:
 
-    ![GitHub authorize Gradescope page](res/authorize-gradescope-page.png)
+   ![GitHub authorize Gradescope page](res/authorize-gradescope-page.png)
 
-6. You should be directed back to Gradescope. Now when you upload a submission, you should see a list of repositories to select. Be sure to choose the correct repository for the assignment, or the tests won't pass, and you'll get a terrible grade (note: your repository name will be different than the one in the below screenshot).
+6. You should be directed back to Gradescope. Now when you upload a
+   submission, you should see a list of repositories to select.
+   Be sure to choose the correct repository for the assignment,
+   or the tests won't pass, and you'll get a terrible grade (note:
+   your repository name will be different than the one in the below
+   screenshot).
 
-    ![Gradescope select repositories](res/select-repository.png)
+   ![Gradescope select repositories](res/select-repository.png)
 
-7. "Branching" is an advanced feature in Git to allow multiple features to be built without affecting each other. We won't use this in CS-162, so select the `main` branch.
+7. "Branching" is an advanced feature in Git to allow multiple
+   features to be built without affecting each other. We won't use
+   this in CS-162, so select the `main` branch.
 
-8. Click the "Upload" button and wait for the autograder to complete. It will download code from your repository and try running some automated tests; you will also receive an email when your assignment is submitted. While the autograder running, you will see a message that looks like:
+8. Click the "Upload" button and wait for the autograder to complete.
+   It will download code from your repository and try running some
+   automated tests; you will also receive an email when your
+   assignment is submitted. While the autograder running, you
+   will see a message that looks like:
 
-    ![Autograder not finished](res/autograder-not-finished.png)
+   ![Autograder not finished](res/autograder-not-finished.png)
 
-9. If everything went well, you should eventually see test results, and hopefully they all passed:
+9. If everything went well, you should eventually see test results,
+   and hopefully they all passed:
 
-    ![Tests passed screenshot](res/tests-passed.png)
+   ![Tests passed screenshot](res/tests-passed.png)
 
-10. If things didn't go well, you may see some error output and / or test failures. Don't worry---you can make changes to your code and re-submit your work as many times as you need until the deadline. If you make changes to your code, you'll need to stage and commit those changes, push the new commit(s) back to GitHub, and re-submit your repository to Gradescope, as you did in the previous steps.
+10. If things didn't go well, you may see some error output and /
+    or test failures. Don't worry---you can make changes to your code
+    and re-submit your work as many times as you need until the deadline.
+    If you make changes to your code, you'll need to stage and commit
+    those changes, push the new commit(s) back to GitHub, and re-submit
+    your repository to Gradescope, as you did in the previous steps.
 
-    Error outputs will display *very* detailed messages, and you aren't expected to understand it all right now. This course will teach you how to interpret these messages to help you debug your code. For example, if your `test_assignment1_prints_hello_world` test failed, it's likely because you haven't changed `assignment1.py` or because you haven't yet pushed your changes to GitHub. Gradescope can only see changes that have been pushed to your repository in GitHub. Check your repository (see the [verifying your work](#verifying-your-work) section) to ensure you uploaded your changes to GitHub. Once you have made your changes and pushed them to GitHub, you can re-upload them to Gradescope and see if it fixes the tests.
+    Error outputs will display *very* detailed messages,
+    and you aren't expected to understand it all right now. This
+    course will teach you how to interpret these messages to help
+    you debug your code. For example, if your
+    `test_assignment1_prints_hello_world` test failed, it's
+    likely because you haven't changed `assignment1.py` or because
+    you haven't yet pushed your changes to GitHub. Gradescope can
+    only see changes that have been pushed to your repository in GitHub. Check
+    your repository (see the [verifying your work](#verifying-your-work)
+    section) to ensure you uploaded your changes to GitHub. Once you
+    have made your changes and pushed them to GitHub, you can re-upload them
+    to Gradescope and see if it fixes the tests.
 
     Here's an example of what an error output might look like:
 
@@ -424,7 +464,8 @@ The final step is to submit your GitHub repository to Gradescope.
 
 ## Submitting your work
 
-1. Once you have completed all the sections correctly and see passing tests on Gradescope, there is nothing else you need to do.
+Once you have completed all the sections correctly and see passing tests
+on Gradescope, there is nothing else you need to do.
 
 # Acknowledgements
 author: Alexander Guyer (<guyera@oregonstate.edu>), CS 162
