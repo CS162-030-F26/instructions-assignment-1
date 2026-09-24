@@ -242,7 +242,7 @@ starter code for assignments and labs. Complete the following steps:
     enter to navigate to your home directory. From there, use tools like
     `ls` and `cd` to navigate to the directory in which you’d like to
     store your assignment work for this class (e.g.,
-    `cs162/assignments`). Remember: you can create new directories with
+    `cs-162/assignments`). Remember: you can create new directories with
     the `mkdir` shell command.
 
 7.  Run the following shell command:
