@@ -285,7 +285,7 @@ Complete the following steps:
     included in the repository when you cloned it via `git clone`.
 
 2.  Complete the required action items outlined in the `# TODO` code
-    comments.
+    comments, then save and quit Vim.
 
 3.  Some context: Git does not automatically track all changes made to
     files in the repository. Rather, you must *tell* Git that you’ve
