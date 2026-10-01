@@ -215,12 +215,12 @@ starter code for assignments and labs. Complete the following steps:
     similar to this repository page, but without all the assignment
     instructions.
 
-> [!NOTE]
-  You have write access to this new repository. However,
-  it's nested
-  within our class’s GitHub Organization, meaning that the TAs and
-  instructor have access to it as well. Other students do not have
-  access to it.
+    > [!NOTE]
+      You have write access to this new repository. However,
+      it's nested
+      within our class’s GitHub Organization, meaning that the TAs and
+      instructor have access to it as well. Other students do not have
+      access to it.
 
 3.  On your assignment repository page, you should see a green button that
     says “`<> Code`”. Click that button.
